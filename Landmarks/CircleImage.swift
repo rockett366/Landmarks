@@ -2,7 +2,7 @@
 //  CircleImage.swift
 //  Landmarks
 //
-//  Created by Sarah Mejia on 5/29/24.
+//  Created by Emily Mejia on 5/29/24.
 //
 
 import SwiftUI

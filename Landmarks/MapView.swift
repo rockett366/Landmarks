@@ -2,14 +2,22 @@
 //  MapView.swift
 //  Landmarks
 //
-//  Created by Sarah Mejia on 5/29/24.
+//  Created by Emily Mejia on 5/29/24.
 //
 
 import SwiftUI
+import MapKit
 
 struct MapView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Map(initialPosition: .region(region))
+    }
+    
+    private var region: MKCoordinateRegion{
+        MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: 38.58158, longitude: -121.49367),
+            span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+        )
     }
 }
 
